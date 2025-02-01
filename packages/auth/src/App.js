@@ -2,18 +2,21 @@ import React from "react";
 import { Switch, Route, Router } from "react-router-dom";
 import { StylesProvider } from "@material-ui/core/styles";
 
-import Signin from "./components/Signin";
-import Signup from "./components/Signup";
+import SignIn from "./components/Signin";
+import SignUp from "./components/Signup";
 
-export default ({ history }) => {
-  console.log("mktHistory", history);
+export default ({ onSignIn, history }) => {
   return (
     <div>
       <StylesProvider>
         <Router history={history}>
           <Switch>
-            <Route path="/auth/signin" component={Signin} />
-            <Route path="/auth/signup" component={Signup} />
+            <Route path="/auth/signin">
+              <SignIn onSignIn={onSignIn} />
+            </Route>
+            <Route path="/auth/signup">
+              <SignUp onSignIn={onSignIn} />
+            </Route>
           </Switch>
         </Router>
       </StylesProvider>
