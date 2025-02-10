@@ -1,11 +1,5 @@
 import React, { lazy, Suspense, useState, useEffect } from "react";
-import {
-  Router,
-  BrowserRouter,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import { createBrowserHistory } from "history";
 
