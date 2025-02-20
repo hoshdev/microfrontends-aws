@@ -25,7 +25,7 @@ export default () => {
           onSignOut={() => setIsSignedIn(false)}
           isSignedIn={isSignedIn}
         />
-        <Suspense fallback={<div>Loading....</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route path="/auth">
               <AuthLazy onSignIn={() => setIsSignedIn(true)} />
