@@ -3,7 +3,7 @@ import { Switch, Route, Router } from "react-router-dom";
 import { StylesProvider } from "@material-ui/core/styles";
 import Landing from "./components/Landing";
 import Pricing from "./components/Pricing";
-//Dummy
+
 export default ({ history }) => {
   return (
     <div>
