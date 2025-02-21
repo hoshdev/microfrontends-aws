@@ -4,7 +4,6 @@ import { StylesProvider } from "@material-ui/core/styles";
 
 import SignIn from "./components/Signin";
 import SignUp from "./components/Signup";
-//Dummy: Change to deploy
 
 export default ({ onSignIn, history }) => {
   return (
